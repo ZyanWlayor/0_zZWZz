@@ -1,0 +1,30 @@
+{
+  "name": "zzwwzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/umd/0_zZWZz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "module": "./dist/esm/0_zZWZz.js",
+  "license": "ISC",
+  "types": "./types/index.d.ts",
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "rollup": "^2.11.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.1",
+    "core-js": "^3.6.5"
+  }
+}
