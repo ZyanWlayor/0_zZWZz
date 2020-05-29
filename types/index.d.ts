@@ -1,4 +1,6 @@
-/// <reference path="./t.d.ts" />
-export declare function getSomeThing():void
-export var c:container
+import file from "./file"
+import bom from "./bom"
+import dom from "./bom"
+import utils from "./utils"
 
+export { file,bom,dom,utils }

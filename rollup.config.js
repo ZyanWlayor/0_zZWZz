@@ -9,8 +9,6 @@ export default {
   input: './src/index.ts',
 
   plugins: [
-    resolve(),
-    commonjs(),
     typescript({
       useTsconfigDeclarationDir: true
     }),
@@ -22,7 +20,10 @@ export default {
         '.ts',
         '.tsx'
       ]
-    })
+    }),
+    resolve(),
+    commonjs(),
+    
   ],
   output: [
     {

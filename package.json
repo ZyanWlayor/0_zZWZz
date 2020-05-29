@@ -4,8 +4,8 @@
   "description": "",
   "main": "./dist/umd/0_zZWZz.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "test": "jest",
+    "build": "cross-env NODE_ENV=production rollup -c"
   },
   "keywords": [],
   "author": "",
@@ -13,18 +13,23 @@
   "license": "ISC",
   "types": "./types/index.d.ts",
   "devDependencies": {
-    "@babel/core": "^7.10.1",
-    "@babel/plugin-transform-runtime": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
-    "@rollup/plugin-babel": "^5.0.2",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-typescript": "^7.10.1",
+    "@rollup/plugin-babel": "^5.0.3",
     "@rollup/plugin-commonjs": "^12.0.0",
-    "@rollup/plugin-node-resolve": "^8.0.0",
-    "rollup": "^2.11.2",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "@types/jest": "^26.0.0",
+    "cross-env": "^7.0.2",
+    "jest": "^26.0.1",
+    "rollup": "^2.17.1",
     "rollup-plugin-typescript2": "^0.27.1",
-    "typescript": "^3.9.3"
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.1",
+    "@babel/runtime": "^7.10.3",
     "core-js": "^3.6.5"
   }
 }

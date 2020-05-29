@@ -1,7 +1,9 @@
+import * as utilsModule from "./utils"
+import * as fileModule from "./file"
+import * as domModule from "./dom"
+import * as bomModule from "./bom"
 
-export async function getSomeThing(){
-    console.log(new Map())
-}
-export let c:container = {
-    name:'ssd'
-}
+export const utils = utilsModule;
+export const file = fileModule;
+export const dom = domModule;
+export const bom = bomModule;
